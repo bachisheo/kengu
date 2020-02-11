@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище kenguModelContainer" CdmEntityContainer="kenguEntities">
+    <EntitySetMapping Name="catigories">
+      <EntityTypeMapping TypeName="kenguModel.catigories">
+        <MappingFragment StoreEntitySet="catigories">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent-id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="goods">
+      <EntityTypeMapping TypeName="kenguModel.goods">
+        <MappingFragment StoreEntitySet="goods">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_seller" ColumnName="id-seller" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="id_category" ColumnName="id-category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="kenguModel.orders">
+        <MappingFragment StoreEntitySet="orders">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_goods" ColumnName="id-goods" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="track" ColumnName="track" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sellers">
+      <EntityTypeMapping TypeName="kenguModel.sellers">
+        <MappingFragment StoreEntitySet="sellers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pasword" ColumnName="pasword" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

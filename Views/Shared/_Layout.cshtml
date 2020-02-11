@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Content/Site.css">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+</head>
+<body>
+    <div class = "header">
+        <div>
+            <div class = "header-content">
+                <div class = "logo">
+                    <div class="logo-title">Садар
+                    </div>
+                </div>
+                <div class = "search-block">
+                    <input type = "text" class="search-field" name = "search" placeholder="Поиск по сайту">
+                    <button class="serch-button" type="submit">
+                </div>
+                <a class = "button-main bascet">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wriper">
+        @RenderBody()
+    </div>
+
+    <div class="footer">
+    </div>
+</body>
+</html>
